@@ -45,8 +45,16 @@ a {
   color: var(--color-white);
 }
 ul {
-  list-style: none;
   padding-left: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
@@ -84,10 +92,10 @@ p {
 #navbar {
   display: flex; /*박스가 양쪽에 나올수 있게*/
   justify-content: space-between; /*간격이 떨어지도록*/
-  background-color: var(--color-pink);
+  background-color: var(--color-white);
   align-items: center;
-  color: var(--color-white);
-  padding: 16px;
+  color: #30b7e8;
+  padding: 5px;
 }
 .navbar__logo {
   font-size: var(--font-medium);
@@ -95,6 +103,7 @@ p {
 }
 .nav__menu {
   display: flex;
+  margin-right: 30px;
 }
 .navbar__mene__item {
   padding: 8px 12px;
@@ -103,8 +112,46 @@ p {
   border-radius: var(--size-border-radius);
 }
 .navbar__mene__item.active {
-  border: 1px solid var(--color-white);
+  color: #82bbb5;
 }
 .navbar__mene__item:hover {
-  background-color: var(--color-dark-pink);
+  text-decoration: underline;
+}
+
+/* Home */
+#home {
+  background: url("image/main.png") center/cover no-repeat;
+  padding: 120px;
+  text-align: center;
+}
+.textBox {
+  width: 400px;
+  height: 300px;
+  background-color: var(--color-white);
+  display: inline-block;
+  margin-left: 150px;
+  margin-top: 70px;
+}
+.home__title {
+  color: red;
+  font-size: 70px;
+  line-height: 100%;
+  margin: -50px 0 0 20px;
+  font-weight: bolder;
+  text-align: left;
+  letter-spacing: -1px;
+}
+.home__description {
+  color: #616161;
+  line-height: px;
+  font-size: 13px;
+  padding: 40px 60px 40px 20px;
+  text-align: left;
+}
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  color: #616161;
 }
