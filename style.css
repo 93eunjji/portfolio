@@ -62,7 +62,6 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  color: var(--color-black);
   margin: 16px 0px;
 }
 
@@ -76,14 +75,13 @@ h2 {
 h3 {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
+  color: #616161;
   margin: 8px 0;
 }
 
 p {
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
-  color: var(--color-black);
   margin: 4px 0;
 }
 /****************************************/
@@ -154,4 +152,56 @@ p {
   margin: 24px;
   padding: 8px 12px;
   color: #616161;
+}
+
+/* Section common*/
+.section {
+  padding: 50px;
+  text-align: center;
+  margin: auto;
+}
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About*/
+#about {
+  background-color: #30b7e8;
+  padding: 100px 120px 50px 0px;
+  text-align: right;
+  color: var(--color-white);
+  font-size: 12px;
+}
+
+.about__jobs {
+  margin: 100px 0px 0px 0px;
+  text-align: right;
+}
+.jobs {
+}
+.job__period {
+  text-align: left;
+}
+
+/* Skills */
+#skills {
+  text-align: left;
+  color: #30b7e8;
+}
+.skills__type--first {
+  text-align: center;
+}
+.skills__type--second {
+  text-align: center;
+}
+.skills__type--first img {
+  width: 130px;
+  height: 130px;
+  margin: 30px;
+}
+.skills__type--second img {
+  width: 135px;
+  height: 135px;
+  margin: 30px;
 }
