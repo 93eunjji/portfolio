@@ -134,8 +134,7 @@ p {
   height: 300px;
   background-color: var(--color-white);
   display: inline-block;
-  margin-left: 150px;
-  margin-top: 70px;
+
 }
 .home__title {
   color: red;
@@ -257,7 +256,7 @@ p {
 }
 #listWrapper {
   display: flex;
-  margin-left: 80px;
+  justify-content: center;
 }
 #listDesign {
   display: flex;
@@ -323,8 +322,30 @@ p {
   flex-direction: column;
   align-items: flex-start;
 }
+.navbar__menu{
+  width: 100%;
+}
 .nav__menu{
   flex-direction: column;
   text-align: center;
   width: 100%;
+}
+.project__morip {
+  flex-direction: column;
+}
+.project__library {
+  flex-direction: column;
+}
+.listWrapper{
+  flex-direction: column;
+}
+.listDesign{
+  flex-direction: column;
+}
+
+.textBox{
+  flex-direction: column;
+}
+.contact__container{
+  flex-direction: column;
 }
