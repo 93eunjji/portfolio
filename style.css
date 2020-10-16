@@ -382,11 +382,20 @@ h1.c:after{
 .navbar__menu{
   width: 100%;
 }
-.nav__menu{
+.navbar__menu{
   flex-direction: column;
   text-align: center;
   width: 100%;
+}
+.nav__menu{
   display: none;
+}
+
+.nav__menu.open{
+  display: block;
+  background-color: beige;
+  width: 100%;
+  margin: auto;
 }
 .project__morip {
   flex-direction: column;

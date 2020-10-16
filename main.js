@@ -25,6 +25,13 @@ navbarMenu.addEventListener('click', (event) => {
   scrollIntoView(link);
 });
 
+//Navbar toggle button 클릭시 메뉴 스크린 보이게
+const navbarToggleBtn = document.querySelector('.navbar__toggle--btn');
+const navMenu = document.querySelector('.nav__menu');
+navbarToggleBtn.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+});
+
 //Handle scrolling  홈에 'contact me' 버튼 클릭시 이동
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
