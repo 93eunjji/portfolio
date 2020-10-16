@@ -87,7 +87,7 @@ p {
 
 /* Navbar */
 #navbar {
-  position: fixed; /*스크롤 내려도 위에 따라오게*/
+  position: fixed; /*스크롤 내려도 위에*/
   width: 100%;
   display: flex; /*박스가 양쪽에 나올수 있게*/
   justify-content: space-between; /*간격이 떨어지도록*/
@@ -97,6 +97,7 @@ p {
 }
 #navbar.navbar--dark{
   background-color: beige;
+  
 
 }
 .navbar__logo {
