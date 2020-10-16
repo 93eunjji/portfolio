@@ -31,10 +31,7 @@ homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
-function scrollIntoView(selector){
-  const scrollTo = document.querySelector(selector);
-  scrollTo.scrollIntoView({behavior: 'smooth'});
-}
+
 
 //스크롤 내릴수록 home화면이 투명해지게
 const home = document.querySelector('.home__container');
@@ -44,3 +41,27 @@ document.addEventListener('scroll', () => {
   console.log(1- window.scrollY / homeHeight);
   home.style.opacity = 1- window.scrollY / homeHeight;
 });
+
+//show "arrow up" button 아래페이지에서 버튼 누름으로 인해 제일 상단으로 올라옴
+const arrowUp = document.querySelector('.arrow-up');
+document.addEventListener('scroll', () => {
+  if(window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add('visible');
+  } else {
+    arrowUp.classList.remove('visible');
+  }
+});
+
+//"arrow up "button 눌렀을때 home 으로 이동
+arrowUp.addEventListener('click', () => {
+  scrollIntoView('#home');
+});
+
+
+
+
+
+function scrollIntoView(selector){
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior: 'smooth'});
+}
