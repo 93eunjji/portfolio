@@ -62,7 +62,7 @@ button {
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
-  margin: 16px 0px;
+  margin: 10px 0px;
 }
 
 h2 {
@@ -87,12 +87,17 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed; /*스크롤 내려도 위에 따라오게*/
+  width: 100%;
   display: flex; /*박스가 양쪽에 나올수 있게*/
   justify-content: space-between; /*간격이 떨어지도록*/
   background-color: var(--color-white);
   align-items: center;
   color: #30b7e8;
-  padding: 15px;
+}
+#navbar.navbar--dark{
+  background-color: beige;
+
 }
 .navbar__logo {
   font-size: var(--font-medium);
@@ -100,7 +105,7 @@ p {
 }
 .nav__menu {
   display: flex;
-  /* margin-right: 30px; */
+  margin-right: 30px;
 }
 .navbar__mene__item {
   padding: 8px 12px;
@@ -128,6 +133,7 @@ p {
   background: url("image/main.png") center/cover no-repeat;
   padding: 120px;
   text-align: center;
+  padding-top: 200px;
 }
 .textBox {
   width: 400px;
@@ -178,6 +184,29 @@ p {
   text-align: right;
   color: var(--color-white);
   font-size: 12px;
+}
+/* h1.a:after{
+  content: "";
+  display: block;
+  width: 80px;
+  border-bottom: 2px solid white;
+  margin: auto;
+} */
+h1.b:after{
+  content: "";
+  display: block;
+  width: 80px;
+  border-bottom: 2px solid #30b7e8;
+}
+h1.c:after{
+  content: "";
+  display: block;
+  width: 95px;
+  border-bottom: 2.5px solid #30b7e8;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15px;
+  
 }
 
 .about__jobs {
