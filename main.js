@@ -35,3 +35,12 @@ function scrollIntoView(selector){
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({behavior: 'smooth'});
 }
+
+//스크롤 내릴수록 home화면이 투명해지게
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  console.log(`homeHeight: ${homeHeight}`);
+  console.log(1- window.scrollY / homeHeight);
+  home.style.opacity = 1- window.scrollY / homeHeight;
+});
