@@ -83,6 +83,7 @@ p {
   font-weight: var(--weight-regular);
   margin: 4px 0;
 }
+
 /****************************************/
 
 /* Navbar */
@@ -143,26 +144,39 @@ p {
   padding-top: 200px;
 }
 .textBox {
-  width: 400px;
-  height: 300px;
+  width: 500px;
+  height: 340px;
   background-color: var(--color-white);
   display: inline-block;
 
 }
 .home__title {
   color: red;
-  font-size: 70px;
+  font-size: 90px;
   line-height: 100%;
   margin: -50px 0 0 20px;
   font-weight: bolder;
   text-align: left;
   letter-spacing: -1px;
+  background: url("https://media.istockphoto.com/vectors/blue-diagonal-lines-background-design-vector-id978996800?k=6&m=978996800&s=170667a&w=0&h=rvkrOejONB6Rcrdh5-XDvRNF8a5AnNdLH-0s_VnDjR8=");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate{
+  from{
+    background-position: 0% 50%;
+  }
+  to{
+    background-position: 100% 50% 0%;
+  }
 }
 .home__description {
   color: #616161;
   line-height: px;
   font-size: 13px;
-  padding: 40px 60px 40px 20px;
+  padding: 40px 0px 40px 20px;
   text-align: left;
 }
 .home__contact {
@@ -187,7 +201,7 @@ p {
 /* About*/
 #about {
   background-color: #30b7e8;
-  padding: 100px 120px 50px 0px;
+  padding: 100px 50px 50px 0px;
   text-align: right;
   color: var(--color-white);
   font-size: 12px;
