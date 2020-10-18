@@ -469,6 +469,15 @@ h1.c:after{
   width: 100%;
   margin: auto;
 }
+.textBox__container{
+  flex-direction: column;
+}
+.textBox{
+  flex-direction: column;
+}
+.about__txt{
+  flex-direction: column;
+}
 .about__txt--img{
   flex-direction: column;
 }
