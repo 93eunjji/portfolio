@@ -206,7 +206,19 @@ p {
   color: var(--color-white);
   font-size: 12px;
 }
-
+.about__txt{
+  display: flex; 
+}
+.about_img{
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 100px;
+}
+.about__txt--txt{
+  margin-left: 180px;
+}
 /* h1.a:after{
   content: "";
   display: block;
@@ -232,7 +244,7 @@ h1.c:after{
 }
 
 .about__jobs {
-  margin: 100px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   text-align: right;
 }
 .jobs {
@@ -456,6 +468,12 @@ h1.c:after{
   background-color: beige;
   width: 100%;
   margin: auto;
+}
+.about__txt--img{
+  flex-direction: column;
+}
+.about__txt--txt{
+  flex-direction: column;
 }
 .project__morip {
   flex-direction: column;
